@@ -19,6 +19,13 @@ p {
     margin: 0;
 }
 
+h2 {
+    font-size: 22px;
+}
+h3 {
+    font-size: 20px;
+}
+
 .wrapper {
     max-width: 1140px;
     margin: 0 auto;
@@ -89,7 +96,7 @@ p {
 
 /* start main */
 .main {
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 }
 
 /* start block-1*/
@@ -98,7 +105,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 110px - 4vh);
+    min-height: calc(100vh - 110px - 4vh);
     background-image: url('../img/resto-billboard.jpg');
     background-size: cover;
     background-position: center center;
@@ -124,6 +131,65 @@ p {
 }
 .block-1__item::after {
     margin-left: 20px;
+}
+/* end block-1 */
+
+/* start block-2 */
+.block-2 {
+    min-height: calc(100vh - 4vh);
+    border-top: 4px solid #f34949;
+}
+.menu-name {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 156px;
+    height: 61px;
+    margin: 0 auto;
+    padding-bottom: 9px;
+    background-color: #f34949;
+    color: #fff;
+}
+.menu-name::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 9px solid #fff;
+    border-left: 78px solid transparent;
+    border-right: 78px solid transparent;
+}
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.menu-list__column {
+    width: 47.3%;
+}
+.menu-list__column + .menu-block__column {
+    margin-left: 5.4%;
+}
+.menu-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #555;
+}
+.menu-description__subtitle {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b7b7b7;
+}
+.menu-list-item__separator {
+    flex-grow: 1;
+    margin-left: 26px;
+    margin-right: 40px;
+    padding-top: 10px;
+    border-bottom: 1px solid #e3e1e1;
 }
 /* end block-2 */
 
