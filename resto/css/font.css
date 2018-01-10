@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'WC Mano Negra Bta';
-    src: local('WC Mano Negra Bta'),
+    src: /*local('WC Mano Negra Bta'),*/
         url('../font/wc-mano-negra-bta/WCManoNegraBta.woff2') format('woff2'),
         url('../font/wc-mano-negra-bta/WCManoNegraBta.woff') format('woff'),
         url('../font/wc-mano-negra-bta/WCManoNegraBta.otf') format('opentype');
@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Aleo';
-    src: local('Aleo'),
+    src: /*local('Aleo'),*/
         url('../font/aleo/bold/Aleo-Bold.woff2') format('woff2'),
         url('../font/aleo/bold/Aleo-Bold.woff') format('woff'),
         url('../font/aleo/bold/Aleo-Bold.otf') format('opentype');
@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: 'Aleo';
-    src: local('Aleo'),
+    src: /*local('Aleo'),*/
         url('../font/aleo/regular/Aleo-Regular.woff2') format('woff2'),
         url('../font/aleo/regular/Aleo-Regular.woff') format('woff'),
         url('../font/aleo/regular/Aleo-Regular.otf') format('opentype');
@@ -28,10 +28,9 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Aleo';
-    src: local('Aleo'),
+    src: /*local('Aleo'),*/
         url('../font/aleo/light/Aleo-Light.woff2') format('woff2'),
         url('../font/aleo/light/Aleo-Light.woff') format('woff'),
         url('../font/aleo/light/Aleo-Light.otf') format('opentype');
@@ -41,7 +40,7 @@
 
 @font-face {
     font-family: 'Aleo';
-    src: local('Aleo'),
+    src: /*local('Aleo'),*/
         url('../font/aleo/light-italic/Aleo-LightItalic.woff2') format('woff2'),
         url('../font/aleo/light-italic/Aleo-LightItalic.woff') format('woff'),
         url('../font/aleo/light-italic/Aleo-LightItalic.otf') format('opentype');
