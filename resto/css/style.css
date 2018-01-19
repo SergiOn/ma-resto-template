@@ -272,58 +272,45 @@ h3 {
 .slider-toggle__button_active {
     background-color: #9b9b9b;
 }
+.slider {
+    display: flex;
+}
 .slider-item {
     font-weight: 300;
 }
-/*.slider-item__star {
-    margin: 50px 0;
-    position: relative;
-    display: block;
-    color: red;
-    width: 0;
-    height: 0;
-    border-right:  100px solid transparent;
-    border-bottom: 70px  solid red;
-    border-left:   100px solid transparent;
-    -moz-transform:    rotate(35deg);
-    -webkit-transform: rotate(35deg);
-    -ms-transform:     rotate(35deg);
-    -o-transform:      rotate(35deg);
+.slider-item__description {
+    display: flex;
+    justify-content: space-between;
 }
-.slider-item__star::before {
-    border-bottom: 80px solid red;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: -45px;
-    left: -65px;
-    display: block;
-    content: '';
-    -webkit-transform: rotate(-35deg);
-    -moz-transform:    rotate(-35deg);
-    -ms-transform:     rotate(-35deg);
-    -o-transform:      rotate(-35deg);
+.slider-item__rating {
+    display: flex;
+    fill: #dedede;
+}
+.slider-item__rating[data-rating="1"] > .slider-item__star:nth-of-type(-n + 1) {
+    fill: #f1df1a;
+}
+.slider-item__rating[data-rating="2"] > .slider-item__star:nth-of-type(-n + 2) {
+    fill: #f1df1a;
+}
+.slider-item__rating[data-rating="3"] > .slider-item__star:nth-of-type(-n + 3) {
+    fill: #f1df1a;
+}
+.slider-item__rating[data-rating="4"] > .slider-item__star:nth-of-type(-n + 4) {
+    fill: #f1df1a;
+}
+.slider-item__rating[data-rating="5"] {
+    fill: #f1df1a;
+}
+.slider-item__star + .slider-item__star {
+    margin-left: 4px;
+}
+.slider-item__star-item {
+    width: 12px;
+    height: 12px;
+}
 
-}
-.slider-item__star::after {
-    position: absolute;
-    display: block;
-    color: red;
-    top: 3px;
-    left: -105px;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid red;
-    border-left: 100px solid transparent;
-    -webkit-transform: rotate(-70deg);
-    -moz-transform:    rotate(-70deg);
-    -ms-transform:     rotate(-70deg);
-    -o-transform:      rotate(-70deg);
-    content: '';
-}*/
+
+
 /* end block-3 */
 
 
