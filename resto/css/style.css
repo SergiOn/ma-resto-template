@@ -274,9 +274,13 @@ h3 {
 }
 .slider {
     display: flex;
+    justify-content: space-between;
+    width: 419%;
 }
 .slider-item {
     font-weight: 300;
+    width: 4.83%;
+    overflow-x: hidden;
 }
 .slider-item__description {
     display: flex;
@@ -307,6 +311,10 @@ h3 {
 .slider-item__star-item {
     width: 12px;
     height: 12px;
+}
+
+@media (max-width: 1200px) {
+
 }
 
 
