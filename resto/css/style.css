@@ -234,6 +234,40 @@ h3 {
 /*.block-3 {*/
     /*margin-top: 200px;*/
 /*}*/
+.radio-slider-1:checked ~ .slider-dishes .slider-toggle__item:nth-of-type(1) .slider-toggle__button {
+    background-color: #9b9b9b;
+}
+.radio-slider-2:checked ~ .slider-dishes .slider-toggle__item:nth-of-type(2) .slider-toggle__button {
+    background-color: #9b9b9b;
+}
+.radio-slider-3:checked ~ .slider-dishes .slider-toggle__item:nth-of-type(3) .slider-toggle__button {
+    background-color: #9b9b9b;
+}
+.radio-slider-4:checked ~ .slider-dishes .slider-toggle__item:nth-of-type(4) .slider-toggle__button {
+    background-color: #9b9b9b;
+}
+.radio-slider-1:checked ~ .slider-wrapper .slider {
+    transform: translateX(0);
+}
+.radio-slider-2:checked ~ .slider-wrapper .slider {
+    transform: translateX(-25.36%);
+}
+.radio-slider-3:checked ~ .slider-wrapper .slider {
+    transform: translateX(-50.72%);
+}
+.radio-slider-4:checked ~ .slider-wrapper .slider {
+    transform: translateX(-76.08%);
+}
+.slider-wrapper {
+    overflow-x: hidden;
+}
+.radio-slider-1,
+.radio-slider-2,
+.radio-slider-3,
+.radio-slider-4 {
+    display: none;
+}
+
 .slider-dishes {
     display: flex;
     justify-content: space-between
@@ -276,6 +310,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     width: 419%;
+    transition: transform 1s;
 }
 .slider-item {
     font-weight: 300;
