@@ -32,6 +32,9 @@ h3 {
     padding: 0 20px;
 }
 
+.min-height {
+    min-height: 90vh;
+}
 
 /* start header */
 .header {
@@ -231,9 +234,10 @@ h3 {
 /* end block-2 */
 
 /* start block-3 */
-/*.block-3 {*/
-    /*margin-top: 200px;*/
-/*}*/
+.block-3 {
+    /*margin-top: 100px;*/
+    padding-bottom: 100px;
+}
 .radio-slider-1:checked ~ .slider-dishes .slider-toggle__item:nth-of-type(1) .slider-toggle__button {
     background-color: #9b9b9b;
 }
@@ -272,13 +276,13 @@ h3 {
     display: flex;
     justify-content: space-between
 }
-.slider-dishes__title {
+.dishes-title {
     display: flex;
     align-items: center;
     color: #3b3b3b;
     text-transform: uppercase;
 }
-.slider-dishes__title::after {
+.dishes-title::after {
     content: '';
     display: inline-block;
     width: 200px;
@@ -347,18 +351,69 @@ h3 {
     width: 12px;
     height: 12px;
 }
-
-@media (max-width: 1200px) {
-
-}
-
-
-
 /* end block-3 */
 
-
-
-
+/* start block-4 */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 430px;
+    margin-top: 76px;
+}
+.gallery__behavior {
+    width: 33.3%;
+    height: 215px;
+    background-position: center center;
+    background-size: cover;
+    transition: transform .6s;
+}
+.gallery__behavior:hover {
+    transform: scale(.8);
+}
+.gallery__pic-1 {
+    width: 33.4%;
+    height: 430px;
+    background-image: url('../img/block-4/1.jpg');
+}
+.gallery__pic-2 {
+    background-image: url('../img/block-4/2.jpg');
+}
+.gallery__pic-3 {
+    background-image: url('../img/block-4/3.jpg');
+}
+.gallery__pic-4 {
+    background-image: url('../img/block-4/4.jpg');
+}
+.gallery__pic-5 {
+    background-image: url('../img/block-4/5.jpg');
+}
+/* end block-4 */
 /* end main */
 
-
+/* start footer */
+.footer {
+    padding-top: 100px;
+    padding-bottom: 110px;
+    background-color: #3b3b3b;
+    color: #fff;
+}
+.information {
+    display: flex;
+    justify-content: space-between;
+}
+.information__text {
+    font-weight: 300;
+    margin-top: 16px;
+    color: #ececec;
+}
+.information__text_title {
+    font-weight: normal;
+    margin-top: 0;
+    color: #fff;
+}
+.information__text_bold {
+    font-weight: bold;
+    color: #fff;
+}
+/* end footer */
